@@ -8,11 +8,17 @@
  }
 
  .box {
-   background-color: powderblue;
+   background-color: pink;
    color: rgb(27, 27, 27);
    border-radius: 5px;
    padding: 20px;
    text-align: center;
    margin-top: 10px;
    margin-bottom:10px;
+ }
+
+ @media screen and (min-resolution: 1200px) {
+   .image {
+      display: block;
+   }
  }
