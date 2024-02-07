@@ -1,3 +1,10 @@
+.full-width-grid-con {
+   /* set this container as a grid, with 3 columns
+   the other grid will sit in the middle column, this allows for overlapping content */
+   display: grid; 
+	grid-template-columns: 1fr minmax(0, 1200px) 1fr;  
+}
+
 .grid-con { 
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -25,60 +32,6 @@
  .col-end-4	{grid-column-end: 4;}
  .col-end-5	{grid-column-end: 5;}
 
- @media screen and (min-width: 430px) {
-   .grid-con { 
-      display: grid;
-      grid-template-columns: repeat(12, minmax(0, 1fr));
-      grid-column-gap: 30px;
-      max-width: 430px;
-      margin: 0 auto;
-      padding-left: 15px;
-      padding-right: 15px;
-   }
-  }
-
-.s-col-span-1	{grid-column: span 1 / span 1;}
-.s-col-span-2	{grid-column: span 2 / span 2;}
-.s-col-span-3	{grid-column: span 3 / span 3;}
-.s-col-span-4	{grid-column: span 4 / span 4;}
-.s-col-span-5	{grid-column: span 5 / span 5;}
-.s-col-span-6	{grid-column: span 6 / span 6;}
-.s-col-span-7	{grid-column: span 7 / span 7;}
-.s-col-span-8	{grid-column: span 8 / span 8;}
-.s-col-span-9	{grid-column: span 9 / span 9;}
-.s-col-span-10 {grid-column: span 10 / span 10;}
-.s-col-span-11 {grid-column: span 11 / span 11;}
-.s-col-span-12 {grid-column: span 12 / span 12;}
-.s-col-span-full {grid-column: 1 / -1;}
-
-.s-col-start-1	{grid-column-start: 1;}
-.s-col-start-2	{grid-column-start: 2;}
-.s-col-start-3	{grid-column-start: 3;}
-.s-col-start-4	{grid-column-start: 4;}
-.s-col-start-5	{grid-column-start: 5;}
-.s-col-start-6	{grid-column-start: 6;}
-.s-col-start-7	{grid-column-start: 7;}
-.s-col-start-8	{grid-column-start: 8;}
-.s-col-start-9	{grid-column-start: 9;}
-.s-col-start-10	{grid-column-start: 10;}
-.s-col-start-11	{grid-column-start: 11;}
-.s-col-start-12	{grid-column-start: 12;}
-.s-col-start-13	{grid-column-start: 13;}
-
-.s-col-end-1	{grid-column-end: 1;}
-.s-col-end-2	{grid-column-end: 2;}
-.s-col-end-3	{grid-column-end: 3;}
-.s-col-end-4	{grid-column-end: 4;}
-.s-col-end-5	{grid-column-end: 5;}
-.s-col-end-6	{grid-column-end: 6;}
-.s-col-end-7	{grid-column-end: 7;}
-.s-col-end-8	{grid-column-end: 8;}
-.s-col-end-9	{grid-column-end: 9;}
-.s-col-end-10	{grid-column-end: 10;}
-.s-col-end-11	{grid-column-end: 11;}
-.s-col-end-12	{grid-column-end: 12;}
-.s-col-end-13	{grid-column-end: 13;}
-
  @media screen and (min-width: 768px) {
     .grid-con { 
        display: grid;
@@ -89,7 +42,6 @@
        padding-left: 15px;
        padding-right: 15px;
     }
-   }
 
  .m-col-span-1	{grid-column: span 1 / span 1;}
  .m-col-span-2	{grid-column: span 2 / span 2;}
@@ -132,13 +84,15 @@
  .m-col-end-11	{grid-column-end: 11;}
  .m-col-end-12	{grid-column-end: 12;}
  .m-col-end-13	{grid-column-end: 13;}
+
+   }
  
  @media screen and (min-width: 1200px) {
  
     .grid-con {
        grid-template-columns: repeat(12, minmax(0, 1fr));
     }
-   }
+
  .l-col-span-1	{grid-column: span 1 / span 1;}
  .l-col-span-2	{grid-column: span 2 / span 2;}
  .l-col-span-3	{grid-column: span 3 / span 3;}
@@ -180,3 +134,4 @@
  .l-col-end-11	{grid-column-end: 11;}
  .l-col-end-12	{grid-column-end: 12;}
  .l-col-end-13	{grid-column-end: 13;}
+   }
